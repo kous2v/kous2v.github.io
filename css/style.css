@@ -77,7 +77,8 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
 	-ms-user-select: none;
 	user-select: none;
 	width: 250px;
-	background: #4a48b9;
+	/*background: #4a48b9;*/
+	background: #00334d;
 	position: absolute;
 	left: 0;
 	top: 0;
