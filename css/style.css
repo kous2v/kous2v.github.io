@@ -32,7 +32,8 @@ body {
 	font-size: 16px;
 	font-family: 'Lato', sans-serif;
 	font-weight: 400;
-	background: #4D4D4D;
+	background: #002233;
+	/*background: #4D4D4D;*/
 }
 
 a,a:hover,a:focus {
@@ -183,7 +184,8 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
 #profile .title h3 {
 	font-size: 18px;
 	font-weight: 300;
-	color: #aaa;
+	/*color: #aaa;*/
+	color: #66ccff;
 	margin: 0px 0 10px 0;
 }
 
@@ -196,10 +198,13 @@ ul#navigation li {
 	display: block;
 	float: none;
 	clear: both;
-	background: #303030;
-	border-top: 1px solid #373737;
-	border-bottom: 1px solid #2B2B2B;
-
+	/*background: #303030;*/
+	background: #002233;
+	/*border-top: 1px solid #373737;*/
+	/*border-bottom: 1px solid #2B2B2B;*/
+	border-top: 1px solid #00111a;
+	border-bottom: 1px solid #00111a;
+	
 	-webkit-transition: background 0.5s;
 	-moz-transition: background 0.5s;
 	-o-transition: background 0.5s;
@@ -213,7 +218,9 @@ ul#navigation li a {
 }
 
 ul#navigation li:hover,ul#navigation li:focus {
-	background: #363636;
+	/*background: #363636;*/
+	/*background: #006699;*/
+	background: #004466;
 }
 
 ul#navigation li:hover a,ul#navigation li:focus a {
@@ -233,7 +240,8 @@ ul#navigation li.currentmenu a {
 }*/
 
 ul#navigation li.currentmenu {
-	background: #363636;
+	/*background: #363636;*/
+	background: #006699;
 	border-top: 1px solid #3d3d3d;
 	border-bottom: 1px solid #252525;
 }

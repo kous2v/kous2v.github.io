@@ -300,7 +300,8 @@ html {
 }
 
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.428571429;
   color: #002233;
@@ -569,6 +570,13 @@ ol ol {
   padding-left: 0;
   list-style: none;
 }
+
+.list-unstyled-reduced {
+  padding-left: 0;
+  font-size: 10px;
+  list-style: none;
+}
+
 
 .list-inline {
   padding-left: 0;
