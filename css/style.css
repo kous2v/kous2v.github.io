@@ -365,7 +365,8 @@ ul#navigation li .icon {
 }
 
 .color-3 {
-	background: #2c2c2d;
+	/*background: #2c2c2d;*/
+	background: #00334d;
 	color: #fff;
 }
 
