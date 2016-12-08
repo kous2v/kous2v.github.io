@@ -35,7 +35,7 @@ $(document).ready(function() {
         var saiJSON = jQuery.parseJSON(xhttp.responseText);
 //         document.getElementById("code").innerHTML = xhttp.responseText;
         
-        outputText = "SAI: "+saiJSON.rows[0][1]+"<br># Aware Users (FB): "+saiJSON.rows[0][2]+"<br># Users (FB): "+saiJSON.rows[0][1];
+        outputText = "SAI: "+saiJSON.rows[0][0]+"<br># Aware Users (FB): "+saiJSON.rows[0][2]+"<br># Users (FB): "+saiJSON.rows[0][1];
         document.getElementById("code").innerHTML = outputText;
 
         
