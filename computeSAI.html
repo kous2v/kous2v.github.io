@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html>
+<head>
+<title>Schizophrenia Awareness Index</title>
+</head>
 <style type="text/css">
 .ajax-loader {
 	/*hidden from IE 5-6 */
@@ -42,7 +45,7 @@ function processQuery() {
             	var saiJSON = jQuery.parseJSON(xhttp.responseText);
 //              $("#overlay, #PleaseWait").hide();
              	$('#overlay, #PleaseWait').hide();
-             	outputText = "SAI: "+saiJSON.rows[0][0]+"<br>Number of Schizophrenia Aware Facebook Users (FB): "+saiJSON.rows[0][2]+"<br>Number of Facebook Users: "+saiJSON.rows[0][1];
+             	outputText = "Schizophrenia Awareness Index (SAI): "+saiJSON.rows[0][0]+"<br>Number of Schizophrenia Aware Facebook Users (FB): "+saiJSON.rows[0][2]+"<br>Number of Facebook Users: "+saiJSON.rows[0][1];
              	document.getElementById("code").innerHTML = outputText;
             }
           };
@@ -72,7 +75,7 @@ function processQuery() {
         <div class="panel panel-default">
           <div class="panel-heading">
             <h4 class="panel-title">
-              <b>Please fill in the details for SAI</b>
+              Select a combination of attributes to compute the Schizophrenia Awareness Index (SAI) for a given group
             </h4>
           </div>
           <div class="panel-body">
@@ -226,17 +229,20 @@ function processQuery() {
                 
               </fieldset>
             </form>
+            <div class="title text-center">
+      		<p class="where">This tool uses data collected from <a href="https://developers.facebook.com/docs/marketing-api/reachestimate/v2.8/" target="_blank">Facebook’s marketing API</a> to compute the fraction of monthly <a href="https://developers.facebook.com/docs/marketing-api/" target="_blank">active Facebook users</a> in the US who have at least one <a href="https://www.facebook.com/business/help/188888021162119" target="_blank">interest</a> related to schizophrenia (“Psychosis”, “Schizophrenia Awareness”, “Hallucination”, “Schizoaffective Disorder” or “Paranoid Schizophrenia”). Across all 194M users, 1.0% have at least one such interest.</p></div>
             
+ 
           </div>
         </div>
       </div>
-
+	  
+           
       <div class="col-md-2 col-md-offset-2"
         style="width: 45%; float: right;">
         <div class="panel panel-default">
           <div class="panel-heading">
             <h4 class="panel-title">Result</h4>
-            <span id="timetaken"></span>
           </div>
           <div class="panel-body">
             <p id="code" class="prettyprint" style="height: 500px; overflow-y: scroll;"></p>
