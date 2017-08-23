@@ -305,7 +305,8 @@ body {
   font-size: 14px;
   line-height: 1.428571429;
   color: #002233;
-  background-color: #002233;
+  /*background-color: #002233;*/
+  background-color: #00334d;
   /*background-color: #ffffff;*/
 }
 
@@ -3651,7 +3652,7 @@ input[type="button"].btn-block {
   height: 45px;
   padding: 10px 16px;
   font-size: 18px;
-  line-height: 1.33;
+  line-height: 1;
   border-radius: 6px;
 }
 
