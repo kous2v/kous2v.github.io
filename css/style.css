@@ -58,7 +58,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
 	left: 0;
 	right: 0;
 	z-index: 1002;
-	font-size: 30px;
+	font-size: 25px;
 	padding: 2px 10px;
 	background: #2b2b2b;
 	display: block;
@@ -466,13 +466,13 @@ ul.ul-card li .dy .year {
 }
 
 ul.ul-card li .description p {
-	font-size: 12px;
+	font-size: 11px;
 	margin: 0;
 }
 
 ul.ul-card li .description p.where {
 	font-weight: 300;
-	font-size: 12px;
+	font-size: 11px;
 }
 
 /* ul-dates
