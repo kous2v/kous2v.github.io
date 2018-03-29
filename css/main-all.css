@@ -297,6 +297,10 @@ blockquote p:last-child {
   font-size: 2rem;
 }
 
+.med-icon {
+  font-size: 1.5rem;
+}
+
 ul.ul-interests li {
   font-size: 0.9rem;
 }
