@@ -1,6 +1,7 @@
 
+
 var loc = window.location.href,
-    index = loc.indexOf('#');
+    index = loc.toString().indexOf('#');
 
 if (index > 0) {
   window.location = loc.substring(0, index);
