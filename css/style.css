@@ -4,33 +4,35 @@
 	font-family: 'Lato';
 	font-style: normal;
 	font-weight: 300;
-	src: local('Lato Light'), local('Lato-Light'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/KT3KS9Aol4WfR6Vas8kNcg.woff) format('woff');
+	src: local('Lato Light'), local('Lato-Light'), url(https://themes.googleusercontent.com/static/fonts/lato/v6/KT3KS9Aol4WfR6Vas8kNcg.woff) format('woff');
 }
 
 @font-face {
 	font-family: 'Lato';
 	font-style: normal;
 	font-weight: 400;
-	src: local('Lato Regular'), local('Lato-Regular'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/9k-RPmcnxYEPm8CNFsH2gg.woff) format('woff');
+	src: local('Lato Regular'), local('Lato-Regular'), url(https://themes.googleusercontent.com/static/fonts/lato/v6/9k-RPmcnxYEPm8CNFsH2gg.woff) format('woff');
 }
 
 @font-face {
 	font-family: 'Lato';
 	font-style: normal;
 	font-weight: 900;
-	src: local('Lato Black'), local('Lato-Black'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/BVtM30trf7q_jfqYeHfjtA.woff) format('woff');
+	src: local('Lato Black'), local('Lato-Black'), url(https://themes.googleusercontent.com/static/fonts/lato/v6/BVtM30trf7q_jfqYeHfjtA.woff) format('woff');
 }
 
 @font-face {
 	font-family: 'Lato';
 	font-style: italic;
 	font-weight: 400;
-	src: local('Lato Italic'), local('Lato-Italic'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/oUan5VrEkpzIazlUe5ieaA.woff) format('woff');
+	src: local('Lato Italic'), local('Lato-Italic'), url(https://themes.googleusercontent.com/static/fonts/lato/v6/oUan5VrEkpzIazlUe5ieaA.woff) format('woff');
 }
 
 body {
-	font-size: 13.2px;
-	font-family: 'Lato', sans-serif;
+	/*font-size: 13.2px;*/
+	font-size: 15px;
+	/*font-family: 'Lato', sans-serif;*/
+	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 	font-weight: 400;
 	background: #00334d;
 	/*background: #4D4D4D;*/
@@ -466,13 +468,13 @@ ul.ul-card li .dy .year {
 }
 
 ul.ul-card li .description p {
-	font-size: 11px;
+	font-size: 14px;
 	margin: 0;
 }
 
 ul.ul-card li .description p.where {
 	font-weight: 300;
-	font-size: 11px;
+	font-size: 14px;
 }
 
 /* ul-dates
@@ -534,7 +536,8 @@ ul.ul-dates div.content h4,ul.ul-dates-gray div.content h4 {
 }
 
 ul.ul-dates div.content p,ul.ul-dates-gray div.content p {
-	font-size: 12px;
+	/*font-size: 12px;*/
+	font-size: 14px;
 }
 
 /* ul-timeline

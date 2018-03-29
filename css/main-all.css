@@ -319,6 +319,7 @@ ul.ul-edu li .description p {
 }
 
 ul.ul-edu li .description p.course {
+  /*font-size: 2rem;*/
   font-size: 0.9rem;
 }
 
@@ -535,7 +536,8 @@ article {
 .pub-list-item .pub-authors {
   line-height: normal;
   font-style: normal;
-  font-size: 1rem;
+  /*font-size: 1rem;*/
+  font-size: 1.5rem;
   color: #3170A5;
 }
 
@@ -773,7 +775,8 @@ footer a#back_to_top i {
  **************************************************/
 
 .btn-toolbar .btn {
-  font-size: 0.9rem;
+  /*font-size: 0.9rem;*/
+  font-size: 1rem;
   padding: 10px 14px 9px;
   border: none;
 }
