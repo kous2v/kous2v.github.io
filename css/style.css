@@ -31,6 +31,8 @@
 body {
 	/*font-size: 13.2px;*/
 	font-size: 15px;
+	font-size: 3.4vm;
+	font-size: 3.4vmin;
 	/*font-family: 'Lato', sans-serif;*/
 	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 	font-weight: 400;
@@ -61,6 +63,8 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
 	right: 0;
 	z-index: 1002;
 	font-size: 40px;
+	font-size: 10vm;
+	font-size: 10vmin;
 	padding: 2px 10px;
 	background: #2b2b2b;
 	display: block;
@@ -178,6 +182,8 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
 
 #profile .title h2 {
 	font-size: 28px;
+	font-size: 7vm;
+	font-size: 7vmin;
 	font-weight: 300;
 	color: #fff;
 	margin: 20px 0 10px 0;
@@ -185,6 +191,8 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
 
 #profile .title h3 {
 	font-size: 18px;
+	font-size: 4.1vm;
+	font-size: 4.1vmin;
 	font-weight: 300;
 	/*color: #aaa;*/
 	color: #66ccff;
@@ -217,6 +225,8 @@ ul#navigation li {
 ul#navigation li a {
 	color: #ccc;
 	font-size: 14px;
+	font-size: 3.2vm;
+	font-size: 3.2vmin;
 }
 
 ul#navigation li:hover,ul#navigation li:focus {
@@ -264,6 +274,9 @@ ul#navigation li .icon {
 	width: 50px;
 	text-align: center;
 	font-size: 27px;
+	font-size: 6vm;
+	font-size: 6vmin;
+
 }
 
 .social-icons {
@@ -301,6 +314,8 @@ ul#navigation li .icon {
 
 .social-icons i {
 	font-size: 16px;
+	font-size: 3.6vm;
+	font-size: 3.6vmin;
 }
 
 /* page specifics
@@ -333,6 +348,8 @@ ul#navigation li .icon {
 
 .headercontent .title {
 	font-size: 50px;
+	font-size: 11.3vm;
+	font-size: 11.3vmin;
 	margin-bottom: 25px;
 	border-bottom: 1px solid #ccc;
 	padding: 0 0 20px 0;
@@ -386,6 +403,8 @@ ul#navigation li .icon {
 	padding: 0;
 	margin: 0;
 	font-size: 26px;
+	font-size: 5.9vm;
+	font-size: 5.9vmin;
 }
 
 
@@ -401,6 +420,8 @@ ul#navigation li .icon {
 }
 .biothumb .overlay h1{
 	font-size: 45px;
+	font-size: 10.2vm;
+	font-size: 10.2vmin;
 }
 
 
@@ -469,12 +490,16 @@ ul.ul-card li .dy .year {
 
 ul.ul-card li .description p {
 	font-size: 14px;
+	font-size: 3.2vm;
+	font-size: 3.2vmin;
 	margin: 0;
 }
 
 ul.ul-card li .description p.where {
 	font-weight: 300;
 	font-size: 14px;
+	font-size: 3.2vm;
+	font-size: 3.2vmin;
 }
 
 /* ul-dates
@@ -531,13 +556,17 @@ ul.ul-dates div.content,ul.ul-dates-gray div.content {
 
 ul.ul-dates div.content h4,ul.ul-dates-gray div.content h4 {
 	font-weight: 200;
-	font-size: 12px;
+	font-size: 14px;
+	font-size: 3.2vm;
+	font-size: 3.2vmin;
 	margin-top: 0;
 }
 
 ul.ul-dates div.content p,ul.ul-dates-gray div.content p {
 	/*font-size: 12px;*/
 	font-size: 14px;
+	font-size: 3.2vm;
+	font-size: 3.2vmin;
 }
 
 /* ul-timeline
@@ -554,7 +583,9 @@ ul.timeline li .date {
 	padding: 10px 15px 10px 10px;
 	margin-top: 10px;
 	margin-left: -115px;
-	font-size: 12px;
+	font-size: 14px;
+	font-size: 3.2vm;
+	font-size: 3.2vmin;
 	width: 110px;
 	text-align: center;
 	/*background: #03cc85;*/
@@ -587,7 +618,9 @@ ul.timeline li .data {
 	margin: 10px 0px 10px 20px;
 	border-left: 10px solid;
 	padding: 18px 20px;
-	font-size: 10px;
+	font-size: 14px;
+	font-size: 3.2vm;
+	font-size: 3.2vmin;
 
 	-webkit-box-shadow: 0px 3px 3px -3px #ccc;
 	box-shadow: 0px 3px 3px -3px #ccc;
@@ -602,13 +635,17 @@ ul.timeline li.open .data {
 ul.timeline li .data .subject {
 	cursor: pointer;
 	color: #777;
-	font-size: 10px;
+	font-size: 14px;
+	font-size: 3.2vm;
+	font-size: 3.2vmin;
 }
 
 ul.timeline li .data .text {
 	display: none;
 	margin-top: 15px;
-	font-size: 10px;
+	font-size: 14px;
+	font-size: 3.2vm;
+	font-size: 3.2vmin;
 }
 
 /* ul-withdetails
@@ -651,6 +688,8 @@ ul.timeline li .data .text {
 	top: 40%;
 	left: 45%;
 	font-size: 10px;
+	font-size: 2.3vm;
+	font-size: 2.3vmin;
 }
 
 .ul-withdetails li .meta {
@@ -727,7 +766,10 @@ ul.timeline li .data .text {
 	line-height: 180px;
 	padding: 0 10px;
 	color: #f7f7f7;
-	font-size: 30px;
+	/*font-size: 30px;*/
+	font-size: 18px;
+	font-size: 4vm;
+	font-size: 4vmin;
 	z-index: 4;
 }
 
@@ -801,6 +843,8 @@ ul.timeline li .data .text {
 	color: #999;
 	font-weight: 700;
 	font-size: 16px;
+	font-size: 4vm;
+	font-size: 4vmin;
 	background: #fff;
 	display: block;
 	padding: 0 10px 0 30px;
@@ -816,6 +860,8 @@ ul.timeline li .data .text {
 	width: 50px;
 	text-align: center;
 	font-size: 12px;
+	font-size: 3vm;
+	font-size: 3vmin;
 	padding: 8px;
 	height: 70%;
 	line-height: 24px;
@@ -911,6 +957,8 @@ ul.timeline li .data .text {
 	margin: 0;
 	padding: 0 0 15px 0;
 	font-size: 20px;
+	font-size: 4.5vm;
+	font-size: 4.5vmin;
 	font-weight: 300;
 }
 
@@ -936,6 +984,8 @@ ul.timeline li .data .text {
 	padding: 5px 15px;
 	float: right;
 	font-size: 18px;
+	font-size: 4.08vm;
+	font-size: 4.08vmin;
 }
 
 .pitems .pubmain .pubassets a:hover,.pitems .pubmain .pubassets a:focus,.pitems .pubmain .pubassets a.pubcollapse {
@@ -957,6 +1007,8 @@ ul.timeline li .data .text {
 
 #gallery-header h2 {
 	font-size: 50px;
+	font-size: 11.3vm;
+	font-size: 11.3vmin;
 	text-align: center;
 }
 
@@ -1026,6 +1078,8 @@ ul.grid li .comein i {
 	left: 50%;
 	margin-left: -30px;
 	font-size: 22px;
+	font-size: 5vm;
+	font-size: 5vmin;
 	color: #FFF;
 
 	-webkit-box-shadow: 0 0 60px #fff;
@@ -1149,6 +1203,8 @@ ul.grid li a,ul.grid li img {
 
 .icon-huge {
 	font-size: 170px;
+	font-size: 38.5vm;
+	font-size: 38.5vmin;
 	text-align: center;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
 	filter: alpha(opacity=30);
