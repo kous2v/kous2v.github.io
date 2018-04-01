@@ -32,11 +32,12 @@ body {
 	/*font-size: 13.2px;*/
 	font-size: 15px;
 	font-size: 1.8vm;
-	font-size: 1.8vmin;
+	/*font-size: 1vmax;*/
+	font-size: 1vmax;
 	/*font-family: 'Lato', sans-serif;
 	/*font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;*/
 	font-family: Calibri,  Candara, Segoe, "Segoe UI", Optima, 'Lato', Arial, sans-serif;
-	font-weight: 400;
+	font-weight: 500;
 	background: #00334d;
 	/*background: #4D4D4D;*/
 }
@@ -227,7 +228,7 @@ ul#navigation li a {
 	color: #ccc;
 	font-size: 14px;
 	font-size: 1.8vm;
-	font-size: 1.8vmin;
+	font-size: 1vmax;
 }
 
 ul#navigation li:hover,ul#navigation li:focus {
@@ -422,7 +423,7 @@ ul#navigation li .icon {
 .biothumb .overlay h1{
 	font-size: 45px;
 	font-size: 10.1.8vm;
-	font-size: 10.1.8vmin;
+	font-size: 10.1vmax;
 }
 
 
@@ -492,7 +493,7 @@ ul.ul-card li .dy .year {
 ul.ul-card li .description p {
 	font-size: 14px;
 	font-size: 1.8vm;
-	font-size: 1.8vmin;
+	font-size: 1vmax;
 	margin: 0;
 }
 
@@ -500,7 +501,7 @@ ul.ul-card li .description p.where {
 	font-weight: 300;
 	font-size: 14px;
 	font-size: 1.8vm;
-	font-size: 1.8vmin;
+	font-size: 1vmax;
 }
 
 /* ul-dates
@@ -556,10 +557,10 @@ ul.ul-dates div.content,ul.ul-dates-gray div.content {
 }
 
 ul.ul-dates div.content h4,ul.ul-dates-gray div.content h4 {
-	font-weight: 200;
+	font-weight: 300;
 	font-size: 14px;
 	font-size: 1.8vm;
-	font-size: 1.8vmin;
+	font-size: 1vmax;
 	margin-top: 0;
 }
 
@@ -567,7 +568,7 @@ ul.ul-dates div.content p,ul.ul-dates-gray div.content p {
 	/*font-size: 12px;*/
 	font-size: 14px;
 	font-size: 1.8vm;
-	font-size: 1.8vmin;
+	font-size: 1vmax;
 }
 
 /* ul-timeline
@@ -586,7 +587,7 @@ ul.timeline li .date {
 	margin-left: -115px;
 	font-size: 14px;
 	font-size: 1.8vm;
-	font-size: 1.8vmin;
+	font-size: 1vmax;
 	width: 110px;
 	text-align: center;
 	/*background: #03cc85;*/
@@ -621,7 +622,7 @@ ul.timeline li .data {
 	padding: 18px 20px;
 	font-size: 14px;
 	font-size: 1.8vm;
-	font-size: 1.8vmin;
+	font-size: 1vmax;
 	-webkit-box-shadow: 0px 3px 3px -3px #ccc;
 	box-shadow: 0px 3px 3px -3px #ccc;
 	border-radius: 3px;
@@ -637,7 +638,7 @@ ul.timeline li .data .subject {
 	color: #777;
 	font-size: 14px;
 	font-size: 1.8vm;
-	font-size: 1.8vmin;
+	font-size: 1vmax;
 }
 
 ul.timeline li .data .text {
@@ -645,7 +646,7 @@ ul.timeline li .data .text {
 	margin-top: 15px;
 	font-size: 14px;
 	font-size: 1.8vm;
-	font-size: 1.8vmin;
+	font-size: 1vmax;
 }
 
 /* ul-withdetails
@@ -959,7 +960,7 @@ ul.timeline li .data .text {
 	font-size: 20px;
 	font-size: 4.5vm;
 	font-size: 4.5vmin;
-	font-weight: 300;
+	font-weight: 400;
 }
 
 .pitems .pubmain div {
