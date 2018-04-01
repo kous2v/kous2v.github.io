@@ -526,11 +526,14 @@ ul.ul-dates div.dates,ul.ul-dates-gray div.dates {
 
 ul.ul-dates div.dates span,ul.ul-dates-gray div.dates span {
 	/*background-color: #03cc85;*/
-	padding: 0px;
+	padding: 2px;
 	display: block;
 	text-align: center;
 	color: #fff;
 	position: relative;
+	font-size: 14px;
+	font-size: 1.8vm;
+	font-size: 0.8vmax;
 }
 
 ul.ul-dates-gray div.dates span {
