@@ -31,8 +31,8 @@
 body {
 	/*font-size: 13.2px;*/
 	font-size: 15px;
-	font-size: 2vm;
-	font-size: 2vmin;
+	font-size: 1.8vm;
+	font-size: 1.8vmin;
 	/*font-family: 'Lato', sans-serif;
 	/*font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;*/
 	font-family: Calibri,  Candara, Segoe, "Segoe UI", Optima, 'Lato', Arial, sans-serif;
@@ -226,8 +226,8 @@ ul#navigation li {
 ul#navigation li a {
 	color: #ccc;
 	font-size: 14px;
-	font-size: 2vm;
-	font-size: 2vmin;
+	font-size: 1.8vm;
+	font-size: 1.8vmin;
 }
 
 ul#navigation li:hover,ul#navigation li:focus {
@@ -421,8 +421,8 @@ ul#navigation li .icon {
 }
 .biothumb .overlay h1{
 	font-size: 45px;
-	font-size: 10.2vm;
-	font-size: 10.2vmin;
+	font-size: 10.1.8vm;
+	font-size: 10.1.8vmin;
 }
 
 
@@ -491,16 +491,16 @@ ul.ul-card li .dy .year {
 
 ul.ul-card li .description p {
 	font-size: 14px;
-	font-size: 2vm;
-	font-size: 2vmin;
+	font-size: 1.8vm;
+	font-size: 1.8vmin;
 	margin: 0;
 }
 
 ul.ul-card li .description p.where {
 	font-weight: 300;
 	font-size: 14px;
-	font-size: 2vm;
-	font-size: 2vmin;
+	font-size: 1.8vm;
+	font-size: 1.8vmin;
 }
 
 /* ul-dates
@@ -558,16 +558,16 @@ ul.ul-dates div.content,ul.ul-dates-gray div.content {
 ul.ul-dates div.content h4,ul.ul-dates-gray div.content h4 {
 	font-weight: 200;
 	font-size: 14px;
-	font-size: 2vm;
-	font-size: 2vmin;
+	font-size: 1.8vm;
+	font-size: 1.8vmin;
 	margin-top: 0;
 }
 
 ul.ul-dates div.content p,ul.ul-dates-gray div.content p {
 	/*font-size: 12px;*/
 	font-size: 14px;
-	font-size: 2vm;
-	font-size: 2vmin;
+	font-size: 1.8vm;
+	font-size: 1.8vmin;
 }
 
 /* ul-timeline
@@ -585,8 +585,8 @@ ul.timeline li .date {
 	margin-top: 10px;
 	margin-left: -115px;
 	font-size: 14px;
-	font-size: 2vm;
-	font-size: 2vmin;
+	font-size: 1.8vm;
+	font-size: 1.8vmin;
 	width: 110px;
 	text-align: center;
 	/*background: #03cc85;*/
@@ -620,8 +620,8 @@ ul.timeline li .data {
 	border-left: 10px solid;
 	padding: 18px 20px;
 	font-size: 14px;
-	font-size: 2vm;
-	font-size: 2vmin;
+	font-size: 1.8vm;
+	font-size: 1.8vmin;
 	-webkit-box-shadow: 0px 3px 3px -3px #ccc;
 	box-shadow: 0px 3px 3px -3px #ccc;
 	border-radius: 3px;
@@ -636,16 +636,16 @@ ul.timeline li .data .subject {
 	cursor: pointer;
 	color: #777;
 	font-size: 14px;
-	font-size: 2vm;
-	font-size: 2vmin;
+	font-size: 1.8vm;
+	font-size: 1.8vmin;
 }
 
 ul.timeline li .data .text {
 	display: none;
 	margin-top: 15px;
 	font-size: 14px;
-	font-size: 2vm;
-	font-size: 2vmin;
+	font-size: 1.8vm;
+	font-size: 1.8vmin;
 }
 
 /* ul-withdetails
