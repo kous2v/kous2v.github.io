@@ -1,28 +1,28 @@
 /* General styles
  **************************************************/
 @font-face {
-	font-family: 'Lato', Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+	font-family: Calibri, 'Lato', Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 	font-style: normal;
 	font-weight: 300;
 	src: local('Lato Light'), local('Lato-Light'), url(https://themes.googleusercontent.com/static/fonts/lato/v6/KT3KS9Aol4WfR6Vas8kNcg.woff) format('woff');
 }
 
 @font-face {
-	font-family: 'Lato', Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+	font-family: Calibri, 'Lato', Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 	font-style: normal;
 	font-weight: 400;
 	src: local('Lato Regular'), local('Lato-Regular'), url(https://themes.googleusercontent.com/static/fonts/lato/v6/9k-RPmcnxYEPm8CNFsH2gg.woff) format('woff');
 }
 
 @font-face {
-	font-family: 'Lato', Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+	font-family: Calibri, 'Lato', Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 	font-style: normal;
 	font-weight: 900;
 	src: local('Lato Black'), local('Lato-Black'), url(https://themes.googleusercontent.com/static/fonts/lato/v6/BVtM30trf7q_jfqYeHfjtA.woff) format('woff');
 }
 
 @font-face {
-	font-family: 'Lato', Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+	font-family: Calibri, 'Lato', Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 	font-style: italic;
 	font-weight: 400;
 	src: local('Lato Italic'), local('Lato-Italic'), url(https://themes.googleusercontent.com/static/fonts/lato/v6/oUan5VrEkpzIazlUe5ieaA.woff) format('woff');
@@ -31,9 +31,10 @@
 body {
 	/*font-size: 13.2px;*/
 	font-size: 15px;
-	font-size: 1.8vm;
+	/*font-size: 2vm;*/
 	/*font-size: 1vmax;*/
-	font-size: 1vmax;
+	/*font-size: 1vmax;*/
+	font-size: calc(15px+1vw);
 	/*font-family: 'Lato', sans-serif;
 	/*font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;*/
 	font-family: Calibri,  Candara, Segoe, "Segoe UI", Optima, 'Lato', Arial, sans-serif;
@@ -184,8 +185,9 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
 
 #profile .title h2 {
 	font-size: 28px;
-	font-size: 7vm;
+	/*font-size: 7vm;
 	font-size: 7vmin;
+	*/font-size: calc(28px+7vw);
 	font-weight: 300;
 	color: #fff;
 	margin: 20px 0 10px 0;
@@ -193,8 +195,9 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
 
 #profile .title h3 {
 	font-size: 18px;
-	font-size: 4.1vm;
+	/*font-size: 4.1vm;
 	font-size: 4.1vmin;
+	*/font-size: calc(18px+4vw);
 	font-weight: 300;
 	/*color: #aaa;*/
 	color: #66ccff;
@@ -227,8 +230,9 @@ ul#navigation li {
 ul#navigation li a {
 	color: #ccc;
 	font-size: 14px;
-	font-size: 1.8vm;
+	/*font-size: 2vm;
 	font-size: 1vmax;
+	*/font-size: calc(14px+1vw);
 }
 
 ul#navigation li:hover,ul#navigation li:focus {
@@ -276,8 +280,9 @@ ul#navigation li .icon {
 	width: 50px;
 	text-align: center;
 	font-size: 27px;
-	font-size: 6vm;
+	/*font-size: 6vm;
 	font-size: 6vmin;
+	*/font-size: calc(27px+1vw);
 
 }
 
@@ -316,8 +321,9 @@ ul#navigation li .icon {
 
 .social-icons i {
 	font-size: 16px;
-	font-size: 3.6vm;
+	/*font-size: 3.6vm;
 	font-size: 3.6vmin;
+	*/font-size: calc(16px+1vw);
 }
 
 /* page specifics
@@ -350,8 +356,9 @@ ul#navigation li .icon {
 
 .headercontent .title {
 	font-size: 50px;
-	font-size: 11.3vm;
+	/*font-size: 11.3vm;
 	font-size: 11.3vmin;
+	*/font-size: calc(50px+10vw);
 	margin-bottom: 25px;
 	border-bottom: 1px solid #ccc;
 	padding: 0 0 20px 0;
@@ -405,8 +412,9 @@ ul#navigation li .icon {
 	padding: 0;
 	margin: 0;
 	font-size: 26px;
-	font-size: 5.9vm;
+	/*font-size: 5.9vm;
 	font-size: 5.9vmin;
+	*/font-size: calc(26px+5vw);
 }
 
 
@@ -422,8 +430,9 @@ ul#navigation li .icon {
 }
 .biothumb .overlay h1{
 	font-size: 45px;
-	font-size: 10.1.8vm;
+	/*font-size: 10.2vm;
 	font-size: 10.1vmax;
+	*/font-size: calc(45px+10vw);
 }
 
 
@@ -458,7 +467,7 @@ ul.ul-card li {
 	/*padding: 50px 15px 20px 15px;*/
 	padding: 40px 0px 0px 0px;
 	/*background-color: #fff;*/
-	margin-bottom: 15px;
+	margin-bottom: 5px;
 	-webkit-box-shadow: 0px 3px 3px -3px #ccc;
 	box-shadow: 0px 3px 3px -3px #ccc;
 	border-radius: 3px;
@@ -468,7 +477,7 @@ ul.ul-card li {
 
 ul.ul-card li .dy {
 	position: absolute;
-	top: 10px;
+	top: 5px;
 	left: -10px;
 	border-radius: 0px;
 	padding: 0;
@@ -477,7 +486,7 @@ color: white;
 
 ul.ul-card li .dy span {
 	/*padding: 7px 10px;*/
-	padding: 7px 10px;
+	padding: 2px 5px;
 	line-height: 30px;
 	margin: 0;
 }
@@ -495,16 +504,20 @@ ul.ul-card li .dy .year {
 
 ul.ul-card li .description p {
 	font-size: 14px;
-	font-size: 1.8vm;
+	/*font-size: 2vm;
 	font-size: 1vmax;
+	*/
+	font-size: calc(14px+1vw);
 	margin: 0;
+	margin-left: 0px;
 }
 
 ul.ul-card li .description p.where {
 	font-weight: 300;
 	font-size: 14px;
-	font-size: 1.8vm;
+	/*font-size: 2vm;
 	font-size: 1vmax;
+	*/font-size: calc(14px+1vw);
 }
 
 /* ul-dates
@@ -522,19 +535,21 @@ ul.ul-dates li,ul.ul-dates-gray li {
 
 ul.ul-dates div.dates,ul.ul-dates-gray div.dates {
 	float: left;
-	width: 30px;
+	/*padding: 2px 5px;*/
+	width: 60px;
 }
 
 ul.ul-dates div.dates span,ul.ul-dates-gray div.dates span {
 	/*background-color: #03cc85;*/
-	padding: 2px;
+	padding: 0px;
 	display: block;
 	text-align: center;
 	color: #fff;
 	position: relative;
 	font-size: 14px;
-	font-size: 1.8vm;
+	/*font-size: 2vm;
 	font-size: 0.8vmax;
+	*/font-size: calc(14px+1vw);
 }
 
 ul.ul-dates-gray div.dates span {
@@ -557,9 +572,10 @@ ul.ul-dates-gray div.dates span:first-child,ul.ul-dates div.dates span:first-chi
 }
 
 ul.ul-dates div.content,ul.ul-dates-gray div.content {
-	margin-left: 40px;
+	position: relative;
+	margin-left: 70px;
 	min-height: 12px;
-/*	min-height: 1.8vm;
+/*	min-height: 2vm;
 	min-height: 0.95vmax;
 */	padding-top: 0px;
 }
@@ -567,17 +583,20 @@ ul.ul-dates div.content,ul.ul-dates-gray div.content {
 ul.ul-dates div.content h4,ul.ul-dates-gray div.content h4 {
 	font-weight: 300;
 	font-size: 14px;
-	font-size: 1.8vm;
-	font-size: 1vmax;
+	/*font-size: 2vm;*/
+	/*font-size: 1vmax;*/
+	font-size: calc(14px+1vw);
+	/*font-size: 2vh;*/
 	margin-top: 0;
 }
 
 ul.ul-dates div.content p,ul.ul-dates-gray div.content p {
 	/*font-size: 12px;*/
 	font-size: 14px;
-	font-size: 1.8vm;
+	font-size: calc(14px+1vw);
+/*	font-size: 2vm;
 	font-size: 1vmax;
-}
+*/}
 
 /* ul-timeline
  **************************************************/
@@ -594,8 +613,9 @@ ul.timeline li .date {
 	margin-top: 10px;
 	margin-left: -115px;
 	font-size: 14px;
-	font-size: 1.8vm;
-	font-size: 1vmax;
+/*	font-size: 2vm;
+	font-size: 1vmax;*/
+	font-size: calc(14px+1vw);
 	width: 110px;
 	text-align: center;
 	/*background: #03cc85;*/
@@ -629,8 +649,9 @@ ul.timeline li .data {
 	border-left: 10px solid;
 	padding: 18px 20px;
 	font-size: 14px;
-	font-size: 1.8vm;
-	font-size: 1vmax;
+	/*font-size: 2vm;
+	font-size: 1vmax;*/
+	font-size: calc(14px+1vw);
 	-webkit-box-shadow: 0px 3px 3px -3px #ccc;
 	box-shadow: 0px 3px 3px -3px #ccc;
 	border-radius: 3px;
@@ -645,16 +666,18 @@ ul.timeline li .data .subject {
 	cursor: pointer;
 	color: #777;
 	font-size: 14px;
-	font-size: 1.8vm;
-	font-size: 1vmax;
+	/*font-size: 2vm;
+	font-size: 1vmax;*/
+	font-size: calc(14px+1vw);
 }
 
 ul.timeline li .data .text {
 	display: none;
 	margin-top: 15px;
 	font-size: 14px;
-	font-size: 1.8vm;
-	font-size: 1vmax;
+	/*font-size: 2vm;
+	font-size: 1vmax;*/
+	font-size: calc(14px+1vw);
 }
 
 /* ul-withdetails
@@ -697,8 +720,9 @@ ul.timeline li .data .text {
 	top: 40%;
 	left: 45%;
 	font-size: 10px;
-	font-size: 2.3vm;
-	font-size: 2.3vmin;
+	/*font-size: 2.3vm;
+	font-size: 2.3vmin;*/
+	font-size: calc(10px+2vw);
 }
 
 .ul-withdetails li .meta {
@@ -777,8 +801,9 @@ ul.timeline li .data .text {
 	color: #f7f7f7;
 	/*font-size: 30px;*/
 	font-size: 18px;
-	font-size: 4vm;
+	/*font-size: 4vm;
 	font-size: 4vmin;
+	*/font-size: calc(18px+4vw);
 	z-index: 4;
 }
 
@@ -852,8 +877,9 @@ ul.timeline li .data .text {
 	color: #999;
 	font-weight: 700;
 	font-size: 16px;
-	font-size: 4vm;
+	/*font-size: 4vm;
 	font-size: 4vmin;
+	*/font-size: calc(16px+4vw);
 	background: #fff;
 	display: block;
 	padding: 0 10px 0 30px;
@@ -869,8 +895,9 @@ ul.timeline li .data .text {
 	width: 50px;
 	text-align: center;
 	font-size: 12px;
-	font-size: 3vm;
+	/*font-size: 3vm;
 	font-size: 3vmin;
+	*/font-size: calc(12px+3vw);
 	padding: 8px;
 	height: 70%;
 	line-height: 24px;
@@ -966,8 +993,9 @@ ul.timeline li .data .text {
 	margin: 0;
 	padding: 0 0 15px 0;
 	font-size: 20px;
-	font-size: 4.5vm;
+	/*font-size: 4.5vm;
 	font-size: 4.5vmin;
+	*/font-size: calc(20px+5vw);
 	font-weight: 400;
 }
 
@@ -993,8 +1021,9 @@ ul.timeline li .data .text {
 	padding: 5px 15px;
 	float: right;
 	font-size: 18px;
-	font-size: 4.08vm;
+	/*font-size: 4.08vm;
 	font-size: 4.08vmin;
+	*/font-size: calc(18px+4vw);
 }
 
 .pitems .pubmain .pubassets a:hover,.pitems .pubmain .pubassets a:focus,.pitems .pubmain .pubassets a.pubcollapse {
@@ -1016,8 +1045,9 @@ ul.timeline li .data .text {
 
 #gallery-header h2 {
 	font-size: 50px;
-	font-size: 11.3vm;
+	/*font-size: 11.3vm;
 	font-size: 11.3vmin;
+	*/font-size: calc(50px+10vw);
 	text-align: center;
 }
 
@@ -1087,8 +1117,9 @@ ul.grid li .comein i {
 	left: 50%;
 	margin-left: -30px;
 	font-size: 22px;
-	font-size: 5vm;
+	/*font-size: 5vm;
 	font-size: 5vmin;
+	*/font-size: calc(22px+5vw);
 	color: #FFF;
 
 	-webkit-box-shadow: 0 0 60px #fff;
@@ -1212,8 +1243,9 @@ ul.grid li a,ul.grid li img {
 
 .icon-huge {
 	font-size: 170px;
-	font-size: 28.5vm;
+	/*font-size: 28.5vm;
 	font-size: 28.5vmin;
+	*/font-size: calc(170px+28.5vw);
 	text-align: center;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
 	filter: alpha(opacity=30);
