@@ -527,7 +527,7 @@ ul.ul-card li .description p.where {
  **************************************************/
 ul.ul-dates,ul.ul-dates-gray {
 	margin: 0;
-	padding: 0;
+	padding: 0px;
 	list-style: none;
 }
 
