@@ -29,7 +29,7 @@
 }
 
 body {
-	font-size: 14.2px;
+	font-size: 15px;
 	/*font-size: 13.5px;*/
 	/*font-size: 2vm;*/
 	/*font-size: 1vmax;*/
@@ -38,7 +38,7 @@ body {
 	/*font-family: 'Lato', sans-serif;
 	/*font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;*/
 	font-family: Calibri, Helvetica, Candara, Segoe, "Segoe UI", Optima, 'Lato', Arial, sans-serif;
-	font-weight: 450;
+	font-weight: 500;
 	background: #00334d;
 	/*background: #4D4D4D;*/
 }
