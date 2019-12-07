@@ -24,7 +24,7 @@
 @font-face {
 	font-family: Calibri, Helvetica, 'Lato', Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 	font-style: italic;
-	font-weight: 400;
+	font-weight: 500;
 	src: local('Lato Italic'), local('Lato-Italic'), url(https://themes.googleusercontent.com/static/fonts/lato/v6/oUan5VrEkpzIazlUe5ieaA.woff) format('woff');
 }
 
@@ -54,7 +54,7 @@ a,a:hover,a:focus {
 }*/
 h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
 	font-family: Calibri, Helvetica, Candara, Segoe, "Segoe UI", Optima, 'Lato', Arial, sans-serif;
-	font-weight: 400;
+	font-weight: 500;
 }
 
 /* mobile menu
@@ -191,7 +191,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
 	/*font-size: 7vm;
 	font-size: 7vmin;
 	*/font-size: calc(28px+7vw);
-	font-weight: 300;
+	font-weight: 400;
 	color: #fff;
 	margin: 20px 0 10px 0;
 }
@@ -201,7 +201,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
 	/*font-size: 4.1vm;
 	font-size: 4.1vmin;
 	*/font-size: calc(18px+4vw);
-	font-weight: 300;
+	font-weight: 400;
 	/*color: #aaa;*/
 	color: #66ccff;
 	margin: 0px 0 10px 0;
@@ -516,7 +516,7 @@ ul.ul-card li .description p {
 }
 
 ul.ul-card li .description p.where {
-	font-weight: 300;
+	font-weight: 400;
 	font-size: 14px;
 	/*font-size: 2vm;
 	font-size: 1vmax;
@@ -584,7 +584,7 @@ ul.ul-dates div.content,ul.ul-dates-gray div.content {
 }
 
 ul.ul-dates div.content h4,ul.ul-dates-gray div.content h4 {
-	font-weight: 300;
+	font-weight: 400;
 	font-size: 14px;
 	/*font-size: 2vm;*/
 	/*font-size: 1vmax;*/
