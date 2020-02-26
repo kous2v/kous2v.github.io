@@ -32,12 +32,12 @@ ul li {
 }
 
 body {
-	font-size: 15px;
+	font-size: 16.5px;
 	/*font-size: 13.5px;*/
 	/*font-size: 2vm;*/
 	/*font-size: 1vmax;*/
 	/*font-size: 1vmax;*/
-	font-size: calc(14px+1vw);
+	font-size: calc(16px+1vw);
 	/*font-family: 'Lato', sans-serif;
 	/*font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;*/
 	font-family: Calibri, 'Lato',  'Roboto Condensed', 'Roboto', Helvetica, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
@@ -235,7 +235,7 @@ ul#navigation li {
 
 ul#navigation li a {
 	color: #ccc;
-	font-size: 14px;
+	font-size: 15px;
 	/*font-size: 2vm;
 	font-size: 1vmax;
 	*/font-size: calc(14px+1vw);
@@ -509,21 +509,21 @@ ul.ul-card li .dy .year {
 }
 
 ul.ul-card li .description p {
-	font-size: 14px;
+	font-size: 15px;
 	/*font-size: 2vm;
 	font-size: 1vmax;
 	*/
-	font-size: calc(14px+1vw);
+	font-size: calc(15px+1vw);
 	margin: 0;
 	margin-left: 0px;
 }
 
 ul.ul-card li .description p.where {
 	font-weight: 400;
-	font-size: 14px;
+	font-size: 15px;
 	/*font-size: 2vm;
 	font-size: 1vmax;
-	*/font-size: calc(14px+1vw);
+	*/font-size: calc(15px+1vw);
 }
 
 /* ul-dates
@@ -552,10 +552,10 @@ ul.ul-dates div.dates span,ul.ul-dates-gray div.dates span {
 	text-align: center;
 	color: #fff;
 	position: relative;
-	font-size: 14px;
+	font-size: 15px;
 	/*font-size: 2vm;
 	font-size: 0.8vmax;
-	*/font-size: calc(14px+1vw);
+	*/font-size: calc(15px+1vw);
 }
 
 ul.ul-dates-gray div.dates span {
@@ -588,18 +588,18 @@ ul.ul-dates div.content,ul.ul-dates-gray div.content {
 
 ul.ul-dates div.content h4,ul.ul-dates-gray div.content h4 {
 	font-weight: 400;
-	font-size: 14px;
+	font-size: 15px;
 	/*font-size: 2vm;*/
 	/*font-size: 1vmax;*/
-	font-size: calc(14px+1vw);
+	font-size: calc(15px+1vw);
 	/*font-size: 2vh;*/
 	margin-top: 0;
 }
 
 ul.ul-dates div.content p,ul.ul-dates-gray div.content p {
 	/*font-size: 12px;*/
-	font-size: 14px;
-	font-size: calc(14px+1vw);
+	font-size: 15px;
+	font-size: calc(15px+1vw);
 /*	font-size: 2vm;
 	font-size: 1vmax;
 */}
@@ -618,10 +618,10 @@ ul.timeline li .date {
 	padding: 10px 15px 10px 10px;
 	margin-top: 10px;
 	margin-left: -115px;
-	font-size: 14px;
+	font-size: 15px;
 /*	font-size: 2vm;
 	font-size: 1vmax;*/
-	font-size: calc(14px+1vw);
+	font-size: calc(15px+1vw);
 	width: 110px;
 	text-align: center;
 	/*background: #03cc85;*/
@@ -654,10 +654,10 @@ ul.timeline li .data {
 	margin: 10px 0px 10px 20px;
 	border-left: 10px solid;
 	padding: 18px 20px;
-	font-size: 14px;
+	font-size: 15px;
 	/*font-size: 2vm;
 	font-size: 1vmax;*/
-	font-size: calc(14px+1vw);
+	font-size: calc(15px+1vw);
 	-webkit-box-shadow: 0px 3px 3px -3px #ccc;
 	box-shadow: 0px 3px 3px -3px #ccc;
 	border-radius: 3px;
@@ -671,7 +671,7 @@ ul.timeline li.open .data {
 ul.timeline li .data .subject {
 	cursor: pointer;
 	color: #777;
-	font-size: 14px;
+	font-size: 15px;
 	/*font-size: 2vm;
 	font-size: 1vmax;*/
 	font-size: calc(14px+1vw);
@@ -680,7 +680,7 @@ ul.timeline li .data .subject {
 ul.timeline li .data .text {
 	display: none;
 	margin-top: 15px;
-	font-size: 14px;
+	font-size: 15px;
 	/*font-size: 2vm;
 	font-size: 1vmax;*/
 	font-size: calc(14px+1vw);
