@@ -4,28 +4,28 @@ ul li {
 /* General styles
  **************************************************/
 @font-face {
-	font-family: Calibri, 'Lato',  'Roboto Condensed', 'Roboto', Helvetica, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+	font-family: 'Roboto', 'Roboto Condensed', 'Lato',  Calibri, Helvetica, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 	font-style: normal;
 	font-weight: 300;
 	src: local('Lato Light'), local('Lato-Light'), url(https://themes.googleusercontent.com/static/fonts/lato/v6/KT3KS9Aol4WfR6Vas8kNcg.woff) format('woff');
 }
 
 @font-face {
-	font-family: Calibri, 'Lato',  'Roboto Condensed', 'Roboto', Helvetica, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+	font-family: 'Roboto', 'Roboto Condensed', 'Lato',  Calibri, Helvetica, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 	font-style: normal;
 	font-weight: 400;
 	src: local('Lato Regular'), local('Lato-Regular'), url(https://themes.googleusercontent.com/static/fonts/lato/v6/9k-RPmcnxYEPm8CNFsH2gg.woff) format('woff');
 }
 
 @font-face {
-	font-family: Calibri, 'Lato',  'Roboto Condensed', 'Roboto', Helvetica, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+	font-family: 'Roboto', 'Roboto Condensed', 'Lato',  Calibri, Helvetica, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 	font-style: normal;
 	font-weight: 800;
 	src: local('Lato Black'), local('Lato-Black'), url(https://themes.googleusercontent.com/static/fonts/lato/v6/BVtM30trf7q_jfqYeHfjtA.woff) format('woff');
 }
 
 @font-face {
-	font-family: Calibri, 'Lato',  'Roboto Condensed', 'Roboto', Helvetica, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+	font-family: 'Roboto', 'Roboto Condensed', 'Lato',  Calibri, Helvetica, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 	font-style: italic;
 	font-weight: 400;
 	src: local('Lato Italic'), local('Lato-Italic'), url(https://themes.googleusercontent.com/static/fonts/lato/v6/oUan5VrEkpzIazlUe5ieaA.woff) format('woff');
@@ -40,7 +40,7 @@ body {
 	font-size: calc(16px+1vw);
 	/*font-family: 'Lato', sans-serif;
 	/*font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;*/
-	font-family: Calibri, 'Lato',  'Roboto Condensed', 'Roboto', Helvetica, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+	font-family: 'Roboto', 'Roboto Condensed', 'Lato',  Calibri, Helvetica, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 	font-weight: 500;
 	background: #00334d;
 	/*background: #4D4D4D;*/
@@ -56,7 +56,7 @@ a,a:hover,a:focus {
 	font-weight: 300;
 }*/
 h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
-	font-family: Calibri, 'Lato',  'Roboto Condensed', 'Roboto', Helvetica, Candara, Segoe, "Segoe UI", Optima, 'Lato', Arial, sans-serif;
+	font-family: 'Roboto', 'Roboto Condensed', 'Lato',  Calibri, Helvetica, Candara, Segoe, "Segoe UI", Optima, 'Lato', Arial, sans-serif;
 	font-weight: 500;
 }
 
