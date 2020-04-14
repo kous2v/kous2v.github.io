@@ -513,6 +513,8 @@ article {
 }
 
 .pub .pub-title {
+  color: #03396c;
+  font-style: bold;
   margin-bottom: 5px;
 }
 
