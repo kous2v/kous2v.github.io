@@ -137,7 +137,7 @@ input, select, textarea {
 		/*font-family: "Source Sans Pro", Helvetica, sans-serif;*/
 		font-family: 'Roboto', 'PT Sans', 'Roboto Condensed', 'Lato', 'Seoge UI', 'Inter', 'Roboto', Calibri, Helvetica, Candara, Segoe, Optima, Arial, sans-serif;
 
-		font-size: 17pt;
+		font-size: 14pt;
 		font-weight: 300;
 		line-height: 1.65;
 		/*text-align: left;*/
@@ -190,7 +190,7 @@ input, select, textarea {
 	}
 
 	p {
-		margin: 0 0 0.25em 0;
+		margin: 0 1em 0.25em 0;
 	}
 
 		p.content {
@@ -329,7 +329,7 @@ input, select, textarea {
 	h1, h2, h3, h4, h5, h6 {
 		/*color: #ffffff;*/
 		color: #636363;
-		
+
 
 	}
 
@@ -2449,6 +2449,8 @@ input, select, textarea {
 
 		ul li {
 			padding-left: 0.5em;
+			padding-top: 20px;
+			/*margin-top: -60px;*/
 		}
 
 		ul.alt {
