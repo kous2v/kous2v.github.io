@@ -129,7 +129,7 @@ input, select, textarea {
 		/*background-color: #935d8c;*/
 		/*color: rgba(255, 255, 255, 0.65);*/
 		color: #636363;
-		/*text-align: center;*/
+		text-align: left;
 	}
 
 	body, input, select, textarea {
@@ -1863,7 +1863,7 @@ input, select, textarea {
 		line-height: 2.75em;
 		min-width: 9.25em;
 		padding: 0 1.5em;
-		text-align: center;
+		text-align: left;
 		text-decoration: none;
 		white-space: nowrap;
 	}
@@ -2287,7 +2287,7 @@ input, select, textarea {
 				line-height: 2.2em;
 				border-radius: 100%;
 				border: solid 1px;
-				text-align: center;
+				text-align: left;
 			}
 
 		.icon.alt {
@@ -2301,7 +2301,7 @@ input, select, textarea {
 				font-size: 1.25em;
 				width: 2em;
 				height: 2em;
-				text-align: center;
+				text-align: left;
 				line-height: 2em;
 			}
 
@@ -2528,10 +2528,10 @@ input, select, textarea {
 		}
 
 		ul.actions.special {
-			-moz-justify-content: center;
-			-webkit-justify-content: center;
-			-ms-justify-content: center;
-			justify-content: center;
+			-moz-justify-content: left;
+			-webkit-justify-content: left;
+			-ms-justify-content: left;
+			justify-content: left;
 			width: 100%;
 			margin-left: 0;
 		}
@@ -2601,7 +2601,7 @@ input, select, textarea {
 					-ms-flex-shrink: 1;
 					flex-shrink: 1;
 					padding: 1em 0 0 0;
-					text-align: center;
+					text-align: left;
 					width: 100%;
 				}
 
@@ -2821,10 +2821,10 @@ input, select, textarea {
 		-webkit-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
-		-moz-justify-content: center;
-		-webkit-justify-content: center;
-		-ms-justify-content: center;
-		justify-content: center;
+		-moz-justify-content: left;
+		-webkit-justify-content: left;
+		-ms-justify-content: left;
+		justify-content: left;
 		width: calc(100% + 2em);
 		margin: 0 0 3em -2em;
 		padding: 0;
@@ -2993,10 +2993,10 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		-moz-align-items: center;
-		-webkit-align-items: center;
-		-ms-align-items: center;
-		align-items: center;
+		-moz-align-items: left;
+		-webkit-align-items: left;
+		-ms-align-items: left;
+		align-items: left;
 		margin: 0 0 2em 0;
 	}
 
@@ -3062,10 +3062,10 @@ input, select, textarea {
 					}
 
 					.spotlight .content .actions {
-						-moz-justify-content: center;
-						-webkit-justify-content: center;
-						-ms-justify-content: center;
-						justify-content: center;
+						-moz-justify-content: left;
+						-webkit-justify-content: left;
+						-ms-justify-content: left;
+						justify-content: left;
 						width: calc(100% + 1em);
 					}
 
@@ -3100,7 +3100,7 @@ input, select, textarea {
 
 	#header {
 		padding: 5em 5em 1em 5em ;
-		text-align: center;
+		text-align: left;
 	}
 
 		#header h1 {
@@ -3245,13 +3245,13 @@ input, select, textarea {
 		color: #636363;
 		position: absolute;
 		width: 80em;
-		max-width: calc(100% - 4em);
+		max-width: calc(100% - 1em);
 		padding: 1em;
 		background-color: #f7f7f7;
 		border-top-left-radius: 0.25em;
 		border-top-right-radius: 0.25em;
 		cursor: default;
-		text-align: center;
+		text-align: left;
 	}
 	
 
