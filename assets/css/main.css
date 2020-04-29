@@ -2667,13 +2667,14 @@ input, select, textarea {
 				content: '';
 				width: 3.25em;
 				height: 2px;
-				margin: 0.7em 0 1em 0;
+				margin: 0.5em 0 0.5em 0;
 				border-radius: 2px;
 			}
 
 				section.special header.major h2:after, article.special header.major h2:after {
 					margin-left: auto;
 					margin-right: auto;
+					text-align: left;
 				}
 
 		header.major p {
@@ -2688,6 +2689,7 @@ input, select, textarea {
 			header.major.special h2:after {
 				margin-left: auto;
 				margin-right: auto;
+				text-align: left;
 			}
 
 	footer.major {
@@ -2721,6 +2723,7 @@ input, select, textarea {
 
 	header.major h2:after {
 		background-color: rgba(255, 255, 255, 0.35);
+		text-align: left;
 	}
 
 /* Table */
@@ -3057,8 +3060,9 @@ input, select, textarea {
 				}
 
 					.spotlight .content header.major h2:after {
-						margin-left: auto;
+						/*margin-left: auto;
 						margin-right: auto;
+						text-align: left;*/
 					}
 
 					.spotlight .content .actions {
@@ -3583,6 +3587,7 @@ input, select, textarea {
 			background-image: -webkit-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
 			background-image: -ms-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
 			background-image: linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
+			text-align: left;
 		}
 
 		#main table tbody tr {
