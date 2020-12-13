@@ -128,7 +128,8 @@ input, select, textarea {
 		/*background-color: #f0f0f0;*/
 		/*background-color: #935d8c;*/
 		/*color: rgba(255, 255, 255, 0.65);*/
-		color: #636363;
+		/*color: #636363;*/
+		color: #383838;
 		text-align: left;
 	}
 
@@ -2506,7 +2507,8 @@ input, select, textarea {
 
 	dl dt {
 		/*color: #ffffff;*/
-		color: #636363;
+		/*color: #636363;*/
+		color: #383838;
 	}
 
 /* Actions */
@@ -3246,7 +3248,8 @@ input, select, textarea {
 		-ms-transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
 		transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
 		background-color: #ffffff;
-		color: #636363;
+		/*color: #636363;*/
+		color: #383838;
 		position: absolute;
 		width: 80em;
 		max-width: calc(100% - 1em);
@@ -3260,19 +3263,23 @@ input, select, textarea {
 	
 
 		#nav input, #nav select, #nav textarea {
-			color: #636363;
+			/*color: #636363;*/
+			color: #383838;
 		}
 
 		#nav a:hover {
-			color: #636363;
+			/*color: #636363;*/
+			color: #383838;
 		}
 
 		#nav strong, #nav b {
-			color: #636363;
+			/*color: #636363;*/
+			color: #383838;
 		}
 
 		#nav h1, #nav h2, #nav h3, #nav h4, #nav h5, #nav h6 {
-			color: #636363;
+			/*color: #636363;*/
+			color: #383838;
 		}
 
 		#nav blockquote {
@@ -3366,29 +3373,34 @@ input, select, textarea {
 
 	#main {
 		background-color: #ffffff;
-		color: #636363;
+		/*color: #636363;*/
+		color: #383838;
 		/*color: #808080;*/
 		border-radius: 0.25em;
 		font-weight: 300;
 	}
 
 		#main input, #main select, #main textarea {
-			color: #636363;
+			/*color: #636363;*/
+			color: #383838;
 		}
 
 		#main a:hover {
-			color: #636363;
+			/*color: #636363;*/
+			color: #383838;
 		}
 
 		#main strong, #main b {
-			color: #636363;
+			/*color: #636363;*/
+			color: #2E2E2E;
 			line-height: 1.5;
 			/*font-weight: 600;*/
 
 		}
 
 		#main h1, #main h2, #main h3, #main h4, #main h5, #main h6 {
-			color: #636363;
+			/*color: #636363;*/
+			color: #383838;
 			font-weight:400;
 		}
 
@@ -3562,7 +3574,7 @@ input, select, textarea {
 
 		#main .icon.alt {
 			border-color: #dddddd;
-			color: #636363;
+			color: #383838;
 		}
 
 			#main .icon.alt:hover {
@@ -3578,7 +3590,7 @@ input, select, textarea {
 		}
 
 		#main dl dt {
-			color: #636363;
+			color: #383838;
 		}
 
 		#main header.major h2:after {
@@ -3599,7 +3611,7 @@ input, select, textarea {
 			}
 
 		#main table th {
-			color: #636363;
+			color: #383838;
 		}
 
 		#main table thead {
