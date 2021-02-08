@@ -2439,11 +2439,12 @@ input, select, textarea {
 	ol {
 		list-style: decimal;
 		margin: 0 0 2em 0;
-		padding-left: 1.25em;
+		padding-left: 2em;
 	}
 
 		ol li {
-			padding-left: 0.25em;
+			padding-left: 1em;
+			padding-top: 0.75em;
 		}
 
 	ul {
