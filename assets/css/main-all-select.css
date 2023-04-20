@@ -23,6 +23,7 @@
   font-weight: 400;
   line-height: 1.25;
   text
+}
 
 #profile .portrait {
   background-image: url('../img/portrait.jpg');
@@ -177,4 +178,71 @@ ul.ul-edu li .description p.institution {
 .talk-event {
   color: #090;
   font-size: 1rem;
+}
+
+/*************************************************
+ *  Button Outlines
+ **************************************************/
+
+.btn-primary {
+  font-family: 'Roboto', 'PT Sans', 'Roboto Condensed', 'Lato', 'Seoge UI', 'Inter', 'Roboto', Calibri, Helvetica, Candara, Segoe, Optima, Arial, sans-serif;
+  background-color: #858585;
+  border-color: #858585;
+/*  border-width: thin;  */
+  padding:1px;
+  color: white;
+  transition: all .5s;
+}
+
+.btn-outline {
+  font-family: 'Roboto', 'PT Sans', 'Roboto Condensed', 'Lato', 'Seoge UI', 'Inter', 'Roboto', Calibri, Helvetica, Candara, Segoe, Optima, Arial, sans-serif;
+  background-color: transparent;
+  color: inherit;
+  transition: all .5s;
+}
+
+.btn-primary.btn-outline {
+  color: #636363;
+/*  border-color: #0095eb;*/
+  border-color: #636363;
+  border-width: thin;  
+  padding:1px;
+}
+
+.btn-success.btn-outline {
+/*  color: #5cb85c;*/
+}
+
+.btn-info.btn-outline {
+  color: #5bc0de;
+}
+
+.btn-warning.btn-outline {
+  color: #f0ad4e;
+}
+
+.btn-danger.btn-outline {
+  color: #d9534f;
+}
+
+.btn-primary:hover{
+/*  background-color: #4CAF50; /* Green */
+  background-color: transparent; 
+  border-color: #636363;
+  border-width: thin;
+/*  background-color: inherit; */
+  color: #636363 !important;
+},
+
+.btn-primary.btn-outline:hover{
+/*  background-color: #4CAF50; /* Green */
+  background-color: #636363; 
+/*  background-color: inherit; */
+  color: #FFFFFF !important;
+},
+.btn-success.btn-outline:hover,
+.btn-info.btn-outline:hover,
+.btn-warning.btn-outline:hover,
+.btn-danger.btn-outline:hover {
+  color: #fff;
 }
