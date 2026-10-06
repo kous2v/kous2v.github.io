@@ -112,7 +112,7 @@
 		}
 
 		.pub-filters-label {
-			min-width: 4.5em;
+			min-width: 8.5em;
 			margin-right: 0.25em;
 			font-weight: 600;
 		}
@@ -126,193 +126,94 @@
 			font-style: italic;
 		}
 
-		/* Counts on the filter buttons are hidden; delete this rule to show them again */
-		.pub-filter .pub-count {
-			display: none;
+		/* Topic colors: a soft background (--tag-bg) and a darker text color (--tag-fg) per tag.
+		   To add a topic, add a rule here with its key. */
+		[data-filter="all"] {
+			--tag-bg: #eef0f3;
+			--tag-fg: #4a5260;
 		}
 
-		/* "Showing 14 of 126 papers" line and the Clear filters button */
-		.pub-status {
-			display: flex;
-			flex-wrap: wrap;
-			align-items: center;
-			gap: 0.6em;
-			min-height: 1.9em;
-			margin: 0.1em 0 0.5em;
-			font-size: 0.8em;
-			color: #6b7280;
-		}
-
-		.pub-clear {
-			display: inline-flex;
-			align-items: center;
-			padding: 0.1em 0.6em;
-			border: 1px solid #cfd5dc;
-			border-radius: 3px;
-			background-color: #ffffff;
-			line-height: 1.5;
-			text-decoration: none;
-			cursor: pointer;
-			user-select: none;
-		}
-
-		.pub-clear,
-		.pub-clear:hover {
-			color: #4a5260 !important;
-		}
-
-		.pub-clear:hover {
-			border-color: #9aa3ad;
-			background-color: #f4f5f7;
-			text-decoration: none;
-		}
-
-		.pub-clear:focus-visible {
-			outline: 2px solid #3a414b;
-			outline-offset: 2px;
-		}
-
-		html[data-theme="dark"] .pub-status {
-			color: #9aa3ad;
-		}
-
-		html[data-theme="dark"] .pub-clear {
-			background-color: transparent;
-			border-color: #434a54;
-		}
-
-		html[data-theme="dark"] .pub-clear,
-		html[data-theme="dark"] .pub-clear:hover {
-			color: #c9ced6 !important;
-		}
-
-		html[data-theme="dark"] .pub-clear:hover {
-			background-color: #22262c;
-			border-color: #5a6472;
-		}
-
-		html[data-theme="dark"] .pub-clear:focus-visible {
-			outline-color: #e6e8ec;
-		}
-
-		/* ---------- Topic and method tags ----------
-		   Kept calm on purpose: all tags are dark text on a light background, with a small colored marker.
-		   Topics are rounded pills with round dots; methods are rectangular boxes with square markers.
-		   To add a topic or method, add its key below with a marker color. */
-		/* Topic dots */
 		[data-filter="ai"],
 		[data-tag="ai"] {
-			--dot: #8e82c9;
+			--tag-bg: #ede9fb;
+			--tag-fg: #5a3db3;
 		}
 
 		[data-filter="wellbeing"],
 		[data-tag="wellbeing"] {
-			--dot: #cf8aa6;
+			--tag-bg: #fce8f0;
+			--tag-fg: #a8285f;
 		}
 
 		[data-filter="online"],
 		[data-tag="online"] {
-			--dot: #6aa79c;
+			--tag-bg: #e0f3ef;
+			--tag-fg: #1d6f63;
 		}
 
 		[data-filter="workplace"],
 		[data-tag="workplace"] {
-			--dot: #c9a46a;
+			--tag-bg: #fdf0dc;
+			--tag-fg: #8a520a;
 		}
 
 		[data-filter="sensing"],
 		[data-tag="sensing"] {
-			--dot: #7aa2cc;
+			--tag-bg: #e2eefb;
+			--tag-fg: #235d9c;
 		}
 
 		[data-filter="caregiving"],
 		[data-tag="caregiving"] {
-			--dot: #cf9a82;
+			--tag-bg: #fde9e2;
+			--tag-fg: #9c4024;
 		}
 
 		[data-filter="students"],
 		[data-tag="students"] {
-			--dot: #8fb27a;
+			--tag-bg: #e7f3e2;
+			--tag-fg: #3a6f29;
 		}
 
 		[data-filter="ethics"],
 		[data-tag="ethics"] {
-			--dot: #9a9fc4;
+			--tag-bg: #e8eaf6;
+			--tag-fg: #3c4787;
 		}
 
 		[data-filter="society"],
 		[data-tag="society"] {
-			--dot: #b3aa72;
+			--tag-bg: #f2f0dc;
+			--tag-fg: #625e17;
 		}
 
 		[data-filter="award"],
 		[data-tag="award"] {
-			--dot: #d2b04c;
-		}
-
-		/* Method markers */
-		[data-filter="causal"],
-		[data-tag="causal"] {
-			--dot: #5fa8c4;
-		}
-
-		[data-filter="qualitative"],
-		[data-tag="qualitative"] {
-			--dot: #c58bb5;
-		}
-
-		[data-filter="mixed"],
-		[data-tag="mixed"] {
-			--dot: #b7ae5a;
-		}
-
-		[data-filter="experiment"],
-		[data-tag="experiment"] {
-			--dot: #d98572;
-		}
-
-		[data-filter="llm-eval"],
-		[data-tag="llm-eval"] {
-			--dot: #8f8ad6;
-		}
-
-		[data-filter="ml"],
-		[data-tag="ml"] {
-			--dot: #6fb78a;
-		}
-
-		[data-filter="nlp"],
-		[data-tag="nlp"] {
-			--dot: #d9a066;
-		}
-
-		[data-filter="system"],
-		[data-tag="system"] {
-			--dot: #8a96a6;
+			--tag-bg: #fff3c8;
+			--tag-fg: #7d5a00;
 		}
 
 		.pub-filter,
 		.paper-tag {
-			display: inline-flex;
-			align-items: center;
-			gap: 0.4em;
-			padding: 0.15em 0.65em;
-			border: 1px solid #e2e5e9;
+			display: inline-block;
+			padding: 0.15em 0.6em;
+			border: 1px solid transparent;
+			border-color: color-mix(in srgb, var(--tag-fg) 25%, transparent);
 			border-radius: 999px;
-			background-color: #f4f5f7;
+			background-color: var(--tag-bg);
 			line-height: 1.5;
 			text-decoration: none;
 			white-space: nowrap;
 			cursor: pointer;
 			user-select: none;
-			transition: background-color 0.15s, border-color 0.15s, color 0.15s;
+			transition: background-color 0.15s, border-color 0.15s;
 		}
 
 		.pub-filter,
 		.pub-filter:hover,
 		.paper-tag,
 		.paper-tag:hover {
-			color: #4a5260 !important;
+			color: var(--tag-fg) !important;
 		}
 
 		.pub-filter {
@@ -325,54 +226,27 @@
 
 		.pub-filter:hover,
 		.paper-tag:hover {
-			border-color: #b9c0c8;
+			border-color: var(--tag-fg);
 			text-decoration: none;
 		}
 
-		/* The small colored marker in front of each tag: round for topics */
-		.pub-filter:not([data-filter="all"])::before,
-		.paper-tag::before {
-			content: "";
-			flex: none;
-			width: 0.6em;
-			height: 0.6em;
-			border-radius: 50%;
-			background-color: var(--dot, #9aa3ad);
-		}
-
-		/* Methods: rectangular boxes with square markers, outlined rather than filled */
-		.pub-filter.is-method,
-		.paper-tag.is-method {
-			border-radius: 3px;
-			border-color: #cfd5dc;
-			background-color: #ffffff;
-		}
-
-		.pub-filter.is-method::before,
-		.paper-tag.is-method::before {
-			border-radius: 1px;
-		}
-
-		.pub-filter.is-method:hover,
-		.paper-tag.is-method:hover {
-			border-color: #9aa3ad;
-			background-color: #f7f8fa;
-		}
-
-		/* The selected topic or method */
 		.pub-filter.is-active,
 		.pub-filter.is-active:hover,
 		.paper-tag.is-active,
 		.paper-tag.is-active:hover {
-			background-color: #3a414b;
-			border-color: #3a414b;
-			color: #ffffff !important;
+			background-color: var(--tag-fg);
+			border-color: var(--tag-fg);
+			color: #fff !important;
 		}
 
 		.pub-filter:focus-visible,
 		.paper-tag:focus-visible {
-			outline: 2px solid #3a414b;
+			outline: 2px solid var(--tag-fg);
 			outline-offset: 2px;
+		}
+
+		.pub-filter .pub-count {
+			opacity: 1;
 		}
 
 		.paper-tags {
@@ -382,13 +256,86 @@
 			margin: 0.3em 0 0.2em;
 		}
 
+		/* Method colors: light text on a darker background (--method), so methods read differently from topics.
+		   To add a method, add a rule here with its key. */
+		.is-method[data-filter="all"] {
+			--method: #343a40;
+		}
+
+		[data-filter="causal"],
+		[data-tag="causal"] {
+			--method: #1f5f7a;
+		}
+
+		[data-filter="qualitative"],
+		[data-tag="qualitative"] {
+			--method: #7a3d6d;
+		}
+
+		[data-filter="mixed"],
+		[data-tag="mixed"] {
+			--method: #6b5520;
+		}
+
+		[data-filter="experiment"],
+		[data-tag="experiment"] {
+			--method: #9b3a2c;
+		}
+
+		[data-filter="llm-eval"],
+		[data-tag="llm-eval"] {
+			--method: #43418f;
+		}
+
+		[data-filter="ml"],
+		[data-tag="ml"] {
+			--method: #2d6a4a;
+		}
+
+		[data-filter="nlp"],
+		[data-tag="language"] {
+			--method: #91003f;
+		}
+
+		[data-filter="system"],
+		[data-tag="system"] {
+			--method: #485462;
+		}
+
+		.is-method {
+			--tag-bg: var(--method, #485462);
+			--tag-fg: var(--method, #485462);
+		}
+
+		.pub-filter.is-method,
+		.paper-tag.is-method {
+			border-color: var(--method, #485462);
+		}
+
+		.pub-filter.is-method,
+		.pub-filter.is-method:hover,
+		.paper-tag.is-method,
+		.paper-tag.is-method:hover {
+			color: #fff !important;
+		}
+
+		.pub-filter.is-method:hover,
+		.paper-tag.is-method:hover {
+			filter: brightness(1.15);
+		}
+
+		/* The selected method gets a ring, since methods are already dark */
+		.pub-filter.is-method.is-active,
+		.paper-tag.is-method.is-active {
+			box-shadow: 0 0 0 2px #fff, 0 0 0 3.5px var(--method, #485462);
+		}
+
 		.pub-hidden {
 			display: none !important;
 		}
 
 		/* Tags stay hidden unless switched on (see SHOW_TAGS near the top of the page) */
 		html:not(.tags-on) .pub-filters,
-		html:not(.tags-on) .pub-status,
 		html:not(.tags-on) .paper-tags {
 			display: none !important;
 		}
@@ -445,26 +392,6 @@
 
 		html[data-theme="dark"] .theme-icon-dark {
 			display: inline;
-		}
-
-		/* Paper buttons (DL, Preprint, PDF, Cite, ...) in light mode: light text on dark slate */
-		#main .btn-primary {
-			background-color: #5a6472 !important;
-			border-color: #5a6472 !important;
-			color: #ffffff !important;
-			box-shadow: none !important;
-		}
-
-		#main .btn-primary:hover,
-		#main .btn-primary:focus,
-		#main .btn-primary:active {
-			background-color: #464f5b !important;
-			border-color: #464f5b !important;
-			color: #ffffff !important;
-		}
-
-		#main .btn-primary:focus-visible {
-			box-shadow: 0 0 0 0.2rem rgba(90, 100, 114, 0.35) !important;
 		}
 
 		/* ---------- Dark mode ---------- */
@@ -584,65 +511,120 @@
 			box-shadow: inset 0 0 0 1px #3a4048 !important;
 		}
 
-		/* Paper buttons (DL, Preprint, PDF, Cite, ...): a soft blue outline instead of bright solid blue */
-		html[data-theme="dark"] #main .btn-primary {
-			background-color: rgba(138, 180, 248, 0.12) !important;
-			border-color: rgba(138, 180, 248, 0.4) !important;
-			color: #a8c7fa !important;
-			box-shadow: none !important;
+		/* Topic tags in dark mode: tinted background, light text */
+		html[data-theme="dark"] [data-filter="all"]:not(.is-method) {
+			--tag-bg: #2a2f36;
+			--tag-fg: #d5dae1;
 		}
 
-		html[data-theme="dark"] #main .btn-primary:hover,
-		html[data-theme="dark"] #main .btn-primary:focus,
-		html[data-theme="dark"] #main .btn-primary:active {
-			background-color: rgba(138, 180, 248, 0.22) !important;
-			border-color: rgba(138, 180, 248, 0.65) !important;
-			color: #d2e3fc !important;
+		html[data-theme="dark"] [data-filter="ai"],
+		html[data-theme="dark"] [data-tag="ai"] {
+			--tag-bg: #2c2547;
+			--tag-fg: #c9bcff;
 		}
 
-		/* Tags in dark mode: topics are filled pills, methods are outlined boxes */
-		html[data-theme="dark"] .pub-filter,
-		html[data-theme="dark"] .paper-tag {
-			background-color: #262a31;
-			border-color: #363c45;
+		html[data-theme="dark"] [data-filter="wellbeing"],
+		html[data-theme="dark"] [data-tag="wellbeing"] {
+			--tag-bg: #3d2030;
+			--tag-fg: #ff9fc8;
 		}
 
-		html[data-theme="dark"] .pub-filter,
-		html[data-theme="dark"] .pub-filter:hover,
-		html[data-theme="dark"] .paper-tag,
-		html[data-theme="dark"] .paper-tag:hover {
-			color: #c9ced6 !important;
+		html[data-theme="dark"] [data-filter="online"],
+		html[data-theme="dark"] [data-tag="online"] {
+			--tag-bg: #173631;
+			--tag-fg: #8fdccd;
 		}
 
-		html[data-theme="dark"] .pub-filter:hover,
-		html[data-theme="dark"] .paper-tag:hover {
-			border-color: #5a6472;
+		html[data-theme="dark"] [data-filter="workplace"],
+		html[data-theme="dark"] [data-tag="workplace"] {
+			--tag-bg: #3b2c14;
+			--tag-fg: #f3c27a;
 		}
 
-		html[data-theme="dark"] .pub-filter.is-method,
-		html[data-theme="dark"] .paper-tag.is-method {
-			background-color: transparent;
-			border-color: #434a54;
+		html[data-theme="dark"] [data-filter="sensing"],
+		html[data-theme="dark"] [data-tag="sensing"] {
+			--tag-bg: #182c44;
+			--tag-fg: #9cc7f5;
 		}
 
-		html[data-theme="dark"] .pub-filter.is-method:hover,
-		html[data-theme="dark"] .paper-tag.is-method:hover {
-			background-color: #22262c;
-			border-color: #5a6472;
+		html[data-theme="dark"] [data-filter="caregiving"],
+		html[data-theme="dark"] [data-tag="caregiving"] {
+			--tag-bg: #3d241c;
+			--tag-fg: #f6a98f;
 		}
 
-		html[data-theme="dark"] .pub-filter.is-active,
-		html[data-theme="dark"] .pub-filter.is-active:hover,
-		html[data-theme="dark"] .paper-tag.is-active,
-		html[data-theme="dark"] .paper-tag.is-active:hover {
-			background-color: #e6e8ec;
-			border-color: #e6e8ec;
+		html[data-theme="dark"] [data-filter="students"],
+		html[data-theme="dark"] [data-tag="students"] {
+			--tag-bg: #1f3319;
+			--tag-fg: #a8d993;
+		}
+
+		html[data-theme="dark"] [data-filter="ethics"],
+		html[data-theme="dark"] [data-tag="ethics"] {
+			--tag-bg: #252a45;
+			--tag-fg: #b3bcf2;
+		}
+
+		html[data-theme="dark"] [data-filter="society"],
+		html[data-theme="dark"] [data-tag="society"] {
+			--tag-bg: #33311a;
+			--tag-fg: #ddd68e;
+		}
+
+		html[data-theme="dark"] [data-filter="award"],
+		html[data-theme="dark"] [data-tag="award"] {
+			--tag-bg: #3a3214;
+			--tag-fg: #f2d36b;
+		}
+
+		html[data-theme="dark"] .pub-filter.is-active:not(.is-method),
+		html[data-theme="dark"] .paper-tag.is-active:not(.is-method) {
 			color: #15181c !important;
 		}
 
-		html[data-theme="dark"] .pub-filter:focus-visible,
-		html[data-theme="dark"] .paper-tag:focus-visible {
-			outline-color: #e6e8ec;
+		/* Method tags in dark mode: a little lighter, so they stand out from the page */
+		html[data-theme="dark"] .is-method[data-filter="all"] {
+			--method: #64707b;
+		}
+
+		html[data-theme="dark"] [data-filter="causal"],
+		html[data-theme="dark"] [data-tag="causal"] {
+			--method: #277799;
+		}
+
+		html[data-theme="dark"] [data-filter="qualitative"],
+		html[data-theme="dark"] [data-tag="qualitative"] {
+			--method: #a35191;
+		}
+
+		html[data-theme="dark"] [data-filter="mixed"],
+		html[data-theme="dark"] [data-tag="mixed"] {
+			--method: #866b28;
+		}
+
+		html[data-theme="dark"] [data-filter="experiment"],
+		html[data-theme="dark"] [data-tag="experiment"] {
+			--method: #bd4736;
+		}
+
+		html[data-theme="dark"] [data-filter="llm-eval"],
+		html[data-theme="dark"] [data-tag="llm-eval"] {
+			--method: #6866b9;
+		}
+
+		html[data-theme="dark"] [data-filter="ml"],
+		html[data-theme="dark"] [data-tag="ml"] {
+			--method: #357c56;
+		}
+
+		html[data-theme="dark"] [data-filter="system"],
+		html[data-theme="dark"] [data-tag="system"] {
+			--method: #607082;
+		}
+
+		html[data-theme="dark"] .pub-filter.is-method.is-active,
+		html[data-theme="dark"] .paper-tag.is-method.is-active {
+			box-shadow: 0 0 0 2px #1b1e23, 0 0 0 3.5px #e6e8ec;
 		}
 
 	</style>
@@ -928,10 +910,6 @@
 							<a class="pub-filter is-method" role="button" tabindex="0" data-filter="ml" aria-pressed="false">Machine Learning</a>
 							<a class="pub-filter is-method" role="button" tabindex="0" data-filter="nlp" aria-pressed="false">Language</a>
 							<a class="pub-filter is-method" role="button" tabindex="0" data-filter="system" aria-pressed="false">Design</a>
-						</div>
-						<div class="pub-status" aria-live="polite">
-							<span class="pub-status-text"></span>
-							<a class="pub-clear pub-hidden" role="button" tabindex="0">Clear filters</a>
 						</div>
 						<p class="pub-empty pub-hidden">No papers match this topic and method together.</p>
 						<!-- <a href="#intro" class="active">About</a> -->
@@ -1425,7 +1403,7 @@
 								<!-- <b>ACM Health</b></h6> -->
 							</li>
 
-							<li itemscope="" itemtype="https://schema.org/CreativeWork" data-tags="wellbeing online society" data-methods="ml">
+							<li itemscope="" itemtype="https://schema.org/CreativeWork" data-tags="wellbeing online" data-methods="ml society">
 								<i class="fa-li fa fa-file-text pub-icon text-justify" aria-hidden="true"></i>
 								<b>Life Events as Predictors of Wellbeing Outcomes</b>&nbsp;&nbsp;<font size="3em">
 									<a class="btn btn-primary btn-sm" href="https://www.nature.com/articles/s44482-025-00005-3" target="_blank">Link</a>&nbsp;
@@ -1571,7 +1549,7 @@
 								</h6>
 								<!-- <b>ACM Health</b></h6> -->
 							</li>
-							<li itemscope="" itemtype="https://schema.org/CreativeWork" data-tags="ai wellbeing caregiving" data-methods="qualitative system">
+							<li itemscope="" itemtype="https://schema.org/CreativeWork" data-tags="ai wellbeing caregiving" data-methods="qualitative design">
 								<i class="fa-li fa fa-file-text pub-icon text-justify" aria-hidden="true"></i>
 								<b>Mapping Caregiver Needs to AI Chatbot Design: Strengths and Gaps in Mental Health Support for Alzheimer's and Dementia Caregivers</b>&nbsp;<font size="3em">
 									<a class="btn btn-primary btn-sm" href="https://dl.acm.org/doi/10.1145/3803549" target="_blank">DL</a>&nbsp;<a class="btn btn-primary btn-sm" href="https://arxiv.org/abs/2506.15047" target="_blank">Preprint</a>&nbsp;<a class="btn btn-primary btn-sm" data-toggle="modal" href="#shi2026mapping">Cite</a></font>
@@ -1675,7 +1653,7 @@
 									<a href="https://websci26.org/" target="_blank"><b>WebSci 2026</b></a>
 								</h6>
 							</li>
-							<li itemscope="" itemtype="https://schema.org/CreativeWork" data-tags="ai wellbeing" data-methods="qualitative system">
+							<li itemscope="" itemtype="https://schema.org/CreativeWork" data-tags="ai wellbeing" data-methods="qualitative design">
 								<i class="fa-li fa fa-file-text pub-icon text-justify" aria-hidden="true"></i>
 								<b>AI Chatbots for Mental Health Self-Management: A Lived Experience–Centered Qualitative Study</b>&nbsp;&nbsp;<font size="3em">
 									<a class="btn btn-primary btn-sm" href="https://mental.jmir.org/2026/1/e78288" target="_blank">Link</a>&nbsp;
@@ -2045,7 +2023,7 @@
 								<!-- <b>ACM Health</b></h6> -->
 							</li>
 
-							<li itemscope="" itemtype="https://schema.org/CreativeWork" data-tags="ai" data-methods="system qualitative">
+							<li itemscope="" itemtype="https://schema.org/CreativeWork" data-tags="ai" data-methods="design qualitative">
 								<i class="fa-li fa fa-file-text pub-icon text-justify" aria-hidden="true"></i>
 								<b>AI-Mediated Negotiation: Design Reflections and Lessons </b>&nbsp;&nbsp;
 								<font size="3em"><a class="btn btn-primary btn-sm" href="https://arxiv.org/abs/2606.21886">Preprint</a></font>&nbsp;
@@ -5508,7 +5486,7 @@
 								</h6>
 								<!-- <b>CHI 2019 Case Study</b></h6> -->
 							</li>
-							<li itemscope="" itemtype="https://schema.org/CreativeWork" data-tags="online workplace" data-methods="ml nlp">
+							<li itemscope="" itemtype="https://schema.org/CreativeWork" data-tags="online workplace" data-methods="m nlp">
 								<i class="fa-li fa fa-file-text pub-icon text-justify" aria-hidden="true"></i>
 								<b>Automated Tracking of Components of Job Satisfaction via Text Mining of Twitter
 									Data</b>&thinsp;&thinsp;<font size="3em"><a class="btn btn-primary btn-sm" href="papers/ML_SIOP19_JobSatisfaction.pdf" target="_blank">PDF</a>&nbsp;&nbsp;<a class="btn btn-primary btn-sm" data-toggle="modal" href="#hickman2019automated">Cite</a></font>
@@ -6143,8 +6121,6 @@
 			var items = Array.prototype.slice.call(pubs.querySelectorAll('ol > li[data-tags]'));
 			var total = items.length;
 			var empty = pubs.querySelector('.pub-empty');
-			var statusText = pubs.querySelector('.pub-status-text');
-			var clearBtn = pubs.querySelector('.pub-clear');
 			// Topics already shown in the paper's own text are not repeated as tags
 			var NOT_ON_PAPERS = ['all', 'award'];
 
@@ -6240,14 +6216,6 @@
 					year.classList.toggle('pub-hidden', !ol.querySelector('li[data-tags]:not(.pub-hidden)'));
 				});
 				if (empty) empty.classList.toggle('pub-hidden', shown > 0);
-				// "Showing ... papers" line, and Clear filters only while something is selected
-				var filtered = Object.keys(groups).some(function(name) {
-					return groups[name].current !== 'all';
-				});
-				if (statusText) {
-					statusText.textContent = filtered ? 'Showing ' + shown + ' of ' + total + ' papers' : 'Showing all ' + total + ' papers';
-				}
-				if (clearBtn) clearBtn.classList.toggle('pub-hidden', !filtered);
 				// Counts in each row reflect the choice in the other row
 				Object.keys(groups).forEach(function(name) {
 					var g = groups[name];
@@ -6304,16 +6272,6 @@
 					window.scrollBy(0, li.getBoundingClientRect().top - before);
 				});
 			});
-
-			// Clear filters: back to All in both rows
-			if (clearBtn) {
-				onActivate(clearBtn, function() {
-					Object.keys(groups).forEach(function(name) {
-						groups[name].current = 'all';
-					});
-					render();
-				});
-			}
 
 			render();
 		})();
