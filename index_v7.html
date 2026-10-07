@@ -386,89 +386,6 @@
 			display: none !important;
 		}
 
-		/* ---------- Paper details: abstract and main figure, opened by clicking the paper title ----------
-		   Add to any paper, just before its </li>:
-		   <div class="paper-details">
-		       <img src="images/papers/FILENAME.png" alt="Main figure" loading="lazy">
-		       <p>Abstract text.</p>
-		   </div>
-		   Either part can be left out. Papers without this block stay as they are. */
-		.paper-details {
-			display: grid;
-			grid-template-rows: 0fr;
-			transition: grid-template-rows 0.25s ease;
-		}
-
-		.paper-details.is-open {
-			grid-template-rows: 1fr;
-		}
-
-		.paper-details-inner {
-			min-height: 0;
-			overflow: hidden;
-		}
-
-		.paper-details img {
-			display: block;
-			max-width: 100%;
-			max-height: 22em;
-			height: auto;
-			margin: 0.7em 0 0.5em;
-			padding: 0.4em;
-			border: 1px solid #e2e5e9;
-			border-radius: 6px;
-			background-color: #ffffff; /* keeps figures with transparent backgrounds readable in dark mode */
-		}
-
-		.paper-details p {
-			margin: 0.5em 0 0.9em;
-			font-size: 0.9em;
-			line-height: 1.6;
-		}
-
-		.paper-title-toggle {
-			cursor: pointer;
-		}
-
-		.paper-title-toggle:hover {
-			text-decoration: underline;
-			text-decoration-thickness: 1px;
-			text-underline-offset: 3px;
-		}
-
-		.paper-title-toggle:focus-visible {
-			outline: 2px solid currentColor;
-			outline-offset: 2px;
-		}
-
-		/* The small arrow after a title that can be opened */
-		.paper-caret {
-			display: inline-block;
-			width: 0.42em;
-			height: 0.42em;
-			margin: 0 0.15em 0.18em 0.5em;
-			border-right: 2px solid currentColor;
-			border-bottom: 2px solid currentColor;
-			opacity: 0.55;
-			transform: rotate(-45deg);
-			transition: transform 0.2s ease;
-		}
-
-		.paper-title-toggle.is-open .paper-caret {
-			transform: rotate(45deg);
-		}
-
-		@media (prefers-reduced-motion: reduce) {
-			.paper-details,
-			.paper-caret {
-				transition: none;
-			}
-		}
-
-		html[data-theme="dark"] .paper-details img {
-			border-color: #363c45;
-		}
-
 		/* Tags stay hidden unless switched on (see SHOW_TAGS near the top of the page) */
 		html:not(.tags-on) .pub-filters,
 		html:not(.tags-on) .pub-status,
@@ -544,19 +461,6 @@
 			background-color: #464f5b !important;
 			border-color: #464f5b !important;
 			color: #ffffff !important;
-		}
-
-		/* Paper buttons: sized relative to the paper's own text, so they stay smaller than the title on every screen */
-		#main ol > li > font[size] {
-			font-size: inherit;
-		}
-
-		#main ol > li .btn-primary {
-			font-size: 0.72em;
-			line-height: 1.4;
-			padding: 0.2em 0.6em;
-			border-radius: 0.3em;
-			vertical-align: 0.1em;
 		}
 
 		#main .btn-primary:focus-visible {
@@ -6413,69 +6317,6 @@
 
 			render();
 		})();
-
-		// Paper details: click a paper's title to open its abstract and main figure
-		(function() {
-			var pubs = document.getElementById('publications');
-			if (!pubs) return;
-			Array.prototype.forEach.call(pubs.querySelectorAll('ol > li'), function(li, i) {
-				var details = li.querySelector('.paper-details');
-				var title = li.querySelector(':scope > b');
-				if (!details || !title) return;
-
-				// Wrap the contents (for the open/close animation) and place the block after the tags
-				var inner = document.createElement('div');
-				inner.className = 'paper-details-inner';
-				while (details.firstChild) inner.appendChild(details.firstChild);
-				details.appendChild(inner);
-				li.appendChild(details);
-				if (!details.id) details.id = 'paper-details-' + i;
-				details.inert = true;
-
-				// Hold back figures until the paper is opened, so visitors don't download them all
-				var figures = Array.prototype.slice.call(details.querySelectorAll('img[src]')).filter(function(img) {
-					return !img.complete;
-				});
-				figures.forEach(function(img) {
-					img.setAttribute('data-src', img.getAttribute('src'));
-					img.removeAttribute('src');
-				});
-
-				title.classList.add('paper-title-toggle');
-				title.setAttribute('role', 'button');
-				title.setAttribute('tabindex', '0');
-				title.setAttribute('aria-expanded', 'false');
-				title.setAttribute('aria-controls', details.id);
-				title.setAttribute('title', 'Show abstract');
-				var caret = document.createElement('span');
-				caret.className = 'paper-caret';
-				caret.setAttribute('aria-hidden', 'true');
-				title.appendChild(caret);
-
-				function toggle(e) {
-					e.preventDefault();
-					var open = !details.classList.contains('is-open');
-					if (open) {
-						figures.forEach(function(img) {
-							if (img.getAttribute('data-src')) {
-								img.setAttribute('src', img.getAttribute('data-src'));
-								img.removeAttribute('data-src');
-							}
-						});
-					}
-					details.classList.toggle('is-open', open);
-					title.classList.toggle('is-open', open);
-					details.inert = !open;
-					title.setAttribute('aria-expanded', open ? 'true' : 'false');
-					title.setAttribute('title', open ? 'Hide abstract' : 'Show abstract');
-				}
-				title.addEventListener('click', toggle);
-				title.addEventListener('keydown', function(e) {
-					if (e.key === 'Enter' || e.key === ' ') toggle(e);
-				});
-			});
-		})();
-
 
 	</script>
 
